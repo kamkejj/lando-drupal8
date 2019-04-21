@@ -3,8 +3,7 @@ recipe: drupal8
 config:
   php: 7.1
   via: apache:2.4
-  webroot: docroot
-  database: mysql:5.7
+  webroot: web
   xdebug: true
 services:
   appserver:
@@ -13,4 +12,18 @@ services:
     overrides:
       environment:
         # Support debugging Drush with XDEBUG.
-        PHP_IDE_CONFIG: "serverName=http://drupal-8-lando.lndo.site"
+        PHP_IDE_CONFIG: "serverName=http://opigno.lndo.site"
+  database:
+    type: mariadb
+    portforward: true
+    creds:
+      user: drupal8
+      password: drupal8
+      database: drupal8
+  mysqldatabase:
+    type: mysql
+    portforward: true
+    creds:
+      user: drupal
+      password: drupal
+      database: drupal
