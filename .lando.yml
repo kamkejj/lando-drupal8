@@ -3,7 +3,7 @@ recipe: drupal8
 config:
   php: 7.1
   via: apache:2.4
-  webroot: docroot
+  webroot: web
   xdebug: true
 services:
   appserver:
