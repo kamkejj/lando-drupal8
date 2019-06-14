@@ -5,43 +5,43 @@
 /drush/contrib/
 
 # Ignore non-custom parts of Drupal.
-/docroot/core
-/docroot/libraries
-/docroot/modules/contrib
-/docroot/profiles/contrib
-/docroot/themes/contrib
-/docroot/sites/default/files
+/web/core
+/web/libraries
+/web/modules/contrib
+/web/profiles/contrib
+/web/themes/contrib
+/web/sites/default/files
 
 # Ignore scaffold files
-/docroot/.csslintrc
-/docroot/.editorconfig
-/docroot/.eslintignore
-/docroot/.eslintrc
-/docroot/.gitattributes
-/docroot/.htaccess
-/docroot/autoload.php
-/docroot/index.php
-/docroot/robots.txt
-/docroot/sites/default/default.services.pantheon.preproduction.yml
-/docroot/sites/default/default.services.yml
-/docroot/sites/default/default.settings.php
-/docroot/sites/default/settings.pantheon.php
-/docroot/sites/development.services.yml
-/docroot/sites/example.settings.local.php
-/docroot/sites/example.sites.php
-/docroot/update.php
-/docroot/web.config
+/web/.csslintrc
+/web/.editorconfig
+/web/.eslintignore
+/web/.eslintrc
+/web/.gitattributes
+/web/.htaccess
+/web/autoload.php
+/web/index.php
+/web/robots.txt
+/web/sites/default/default.services.pantheon.preproduction.yml
+/web/sites/default/default.services.yml
+/web/sites/default/default.settings.php
+/web/sites/default/settings.pantheon.php
+/web/sites/development.services.yml
+/web/sites/example.settings.local.php
+/web/sites/example.sites.php
+/web/update.php
+/web/web.config
 
 # Ignore Drupal's file directory
-/docroot/sites/*/files
+/web/sites/*/files
 
 # Pantheon commits a settings.php for environment-specific settings.
 # Place local settings in settings.local.php
-/docroot/sites/*/settings.local.php
-/docroot/sites/*/services*.yml
+/web/sites/*/settings.local.php
+/web/sites/*/services*.yml
 
 # Ignore SimpleTest multi-site environment.
-/docroot/sites/simpletest
+/web/sites/simpletest
 
 # Lint cache
 .phplint-cache
