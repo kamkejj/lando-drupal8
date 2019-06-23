@@ -4,9 +4,11 @@ config:
   php: 7.1
   via: apache:2.4
   webroot: web
-  xdebug: true
+  config:
+    php: .lando.php.ini
 services:
   appserver:
+    xdebug: true
     build:
       - composer install
     overrides:
