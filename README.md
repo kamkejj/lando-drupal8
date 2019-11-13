@@ -5,7 +5,7 @@ First, create a the project with composer before adding lando. Lando with not "i
 
 ```composer create-project drupal-composer/drupal-project:8.x-dev my_site_name_dir --no-interaction```
 
-Second, add .lando.yml and run ```lando start```
+Second, add .lando.yml and .lando.php.ini then run ```lando start```
 
 Add this .gitignore file if desired.
 
